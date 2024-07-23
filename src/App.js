@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import MyMove from './components/mymove/MyMove';
+// import MyProfile from './components/MyProfile';
+// import GetQuote from './components/GetQuote';
+// import Logout from './components/Logout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyMove/>
+      {/* <BrowserRouter>
+      <Routes>
+        <Route path='/mymove' element={<MyMove/>}/>
+        <Route path='mymove' element={<MyProfile/>}/>
+        <Route path='mymove' element={<GetQuote/>}/>
+        <Route path='mymove' element={<Logout/>}/>
+      </Routes>
+      </BrowserRouter> */}
     </div>
   );
 }
